@@ -23,6 +23,7 @@ import cn.smallbun.screw.core.query.dm.DmDataBaseQuery;
 import cn.smallbun.screw.core.query.h2.H2DataBaseQuery;
 import cn.smallbun.screw.core.query.highgo.HigHgoDataBaseQuery;
 import cn.smallbun.screw.core.query.hsql.HsqlDataBaseQuery;
+import cn.smallbun.screw.core.query.kingbasees.KingbaseESDataBaseQuery;
 import cn.smallbun.screw.core.query.mariadb.MariaDbDataBaseQuery;
 import cn.smallbun.screw.core.query.mysql.MySqlDataBaseQuery;
 import cn.smallbun.screw.core.query.oracle.OracleDataBaseQuery;
@@ -119,7 +120,7 @@ public enum DatabaseType implements Serializable {
                                                    * Kingbase
                                                    */
                                                   KINGBASE_ES("kingbasees", "人大金仓数据库",
-                                                              OtherDataBaseQuery.class),
+                                                              KingbaseESDataBaseQuery.class),
 
                                                   /**
                                                    * Phoenix
